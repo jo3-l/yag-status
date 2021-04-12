@@ -14,6 +14,14 @@ A set of Go scripts to monitor YAGPDB status by making `GET` requests to the YAG
 
 ## Usage
 
+We include binaries with all our releases, so if you trust them, feel free to just download & run them.<br>
+Note that if you are running the `monitor` script you will need a `config.json` filled out with the appropriate values in your working directory.<br>
+An example of a valid `config.json` is [included in this repository](./monitor/config.example.json).
+
+Otherwise, check out the [installation from source](#installation-from-source) section to build the binaries yourself.
+
+## Installation from source
+
 _Prerequisites:_<br>
 
 -   Go 1.16
@@ -26,6 +34,10 @@ _Installation:_<br>
     - e.g. `cd downshards`
 3. (Only if using `monitor`) Copy `monitor/config.example.json` to `monitor/config.json` and fill it out.
 4. Run `go run .`
+
+## Screenshots
+
+![Image of the monitor webhook running](./assets/screenshot.png)
 
 ## License
 
